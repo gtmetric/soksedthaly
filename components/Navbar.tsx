@@ -17,7 +17,7 @@ export const Navbar = () => {
 
   return (
     <nav className="fixed w-full top-0 z-10 sm:bg-gray-900 sm:bg-opacity-90">
-      <div className="container flex flex-wrap justify-between items-center mx-auto max-w-4xl bg-gray-900 px-4 pl-6 py-4 backdrop-filter backdrop-blur-sm bg-opacity-90 sm:bg-opacity-0">
+      <div className="container flex flex-wrap justify-between items-center mx-auto max-w-4xl bg-gray-900 px-4 pl-6 py-4 backdrop-filter backdrop-blur-sm bg-opacity-90 sm:bg-opacity-0 shadow-lg">
         <Link href="/" passHref>
           <a className="text-xl text-white font-semibold cursor-pointer">
             Soksedtha Ly
