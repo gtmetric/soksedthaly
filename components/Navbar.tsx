@@ -18,7 +18,7 @@ export const Navbar = () => {
   return (
     <nav className="fixed w-full top-0 z-10 sm:bg-gray-900 sm:bg-opacity-90">
       <div className="container flex flex-wrap justify-between items-center mx-auto max-w-4xl bg-gray-900 px-4 pl-6 py-4 backdrop-filter backdrop-blur-sm bg-opacity-90 sm:bg-opacity-0">
-        <Link href="#" passHref>
+        <Link href="/" passHref>
           <a className="text-xl text-white font-semibold cursor-pointer">
             Soksedtha Ly
           </a>
@@ -46,17 +46,17 @@ export const Navbar = () => {
           </svg>
         </button>
         <div className="hidden w-full sm:block sm:w-auto" id="mobile-menu">
-          <Link href="#" passHref>
+          <Link href="/about" passHref>
             <a className="text-gray-300 hover:text-white px-3 cursor-pointer">
               About
             </a>
           </Link>
-          <Link href="#" passHref>
+          <Link href="/blog" passHref>
             <a className="text-gray-300 hover:text-white px-3 cursor-pointer">
               Blog
             </a>
           </Link>
-          <Link href="#" passHref>
+          <Link href="/contact" passHref>
             <a className="text-gray-300 hover:text-white px-3 cursor-pointer">
               Contact
             </a>
@@ -73,18 +73,27 @@ export const Navbar = () => {
             navOpen ? '' : 'hidden'
           } sm:hidden container grid grid-flow-row grid-rows-3 text-white text-center py-2 pb-4`}
         >
-          <Link href="#" passHref>
-            <a className="text-gray-300 hover:text-white cursor-pointer py-2">
+          <Link href="/about" passHref>
+            <a
+              className="text-gray-300 hover:text-white cursor-pointer py-2"
+              onClick={() => setNavChange(!navOpen)}
+            >
               About
             </a>
           </Link>
-          <Link href="#" passHref>
-            <a className="text-gray-300 hover:text-white cursor-pointer py-2">
+          <Link href="/blog" passHref>
+            <a
+              className="text-gray-300 hover:text-white cursor-pointer py-2"
+              onClick={() => setNavChange(!navOpen)}
+            >
               Blog
             </a>
           </Link>
-          <Link href="#" passHref>
-            <a className="text-gray-300 hover:text-white cursor-pointer py-2">
+          <Link href="/contact" passHref>
+            <a
+              className="text-gray-300 hover:text-white cursor-pointer py-2"
+              onClick={() => setNavChange(!navOpen)}
+            >
               Contact
             </a>
           </Link>
