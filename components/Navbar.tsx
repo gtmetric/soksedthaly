@@ -17,9 +17,9 @@ export const Navbar = () => {
 
   return (
     <nav className="fixed w-full top-0 z-10 sm:bg-gray-900 sm:bg-opacity-90">
-      <div className="container flex flex-wrap justify-between items-center mx-auto max-w-4xl bg-gray-900 px-4 pl-6 py-4 backdrop-filter backdrop-blur-sm bg-opacity-90 sm:bg-opacity-0 shadow-lg">
+      <div className="container flex flex-wrap justify-between items-center mx-auto max-w-4xl bg-gray-900 px-4 py-4 backdrop-filter backdrop-blur-sm bg-opacity-90 sm:bg-opacity-0 shadow-lg xl:max-w-6xl">
         <Link href="/" passHref>
-          <a className="text-xl text-white font-semibold cursor-pointer">
+          <a className="text-xl text-white font-semibold cursor-pointer md:text-2xl">
             Soksedtha Ly
           </a>
         </Link>
@@ -45,19 +45,19 @@ export const Navbar = () => {
             ></path>
           </svg>
         </button>
-        <div className="hidden w-full sm:block sm:w-auto" id="mobile-menu">
+        <div className="hidden w-full sm:block sm:w-auto">
           <Link href="/about" passHref>
-            <a className="text-gray-300 hover:text-white px-3 cursor-pointer">
+            <a className="text-gray-300 hover:text-white px-3 cursor-pointer md:text-lg">
               About
             </a>
           </Link>
           <Link href="/blog" passHref>
-            <a className="text-gray-300 hover:text-white px-3 cursor-pointer">
+            <a className="text-gray-300 hover:text-white px-3 cursor-pointer md:text-lg">
               Blog
             </a>
           </Link>
           <Link href="/contact" passHref>
-            <a className="text-gray-300 hover:text-white px-3 cursor-pointer">
+            <a className="text-gray-300 hover:text-white px-3 cursor-pointer md:text-lg">
               Contact
             </a>
           </Link>

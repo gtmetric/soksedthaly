@@ -7,22 +7,22 @@ export const ExperienceItem = (props: {
   employer: string
   children: ReactNode | ReactNode[]
 }) => (
-  <div className="pb-10">
+  <div className="pb-10 md:pb-12">
     <div className="text-left flex">
       {/* Period */}
       <div className="font-semibold pr-8">
-        <p className="text-lg">{props.year}</p>
-        <p className="pt-1">{props.month}</p>
+        <p className="text-xl md:text-2xl">{props.year}</p>
+        <p className="text-lg pt-1 md:text-xl">{props.month}</p>
       </div>
       {/* Position */}
       <div>
-        <h2 className="text-lg font-semibold">{props.position}</h2>
-        <p className="pt-1">{props.employer}</p>
+        <h2 className="text-xl font-semibold md:text-2xl">{props.position}</h2>
+        <p className="text-lg pt-1 md:text-xl">{props.employer}</p>
         {/* Description */}
-        <div className="hidden sm:block pl-6 pt-4">{props.children}</div>
+        <div className="hidden sm:block text-lg pl-6 pt-4 md:text-xl md:leading-8">{props.children}</div>
       </div>
     </div>
     {/* Description - Mobile */}
-    <div className="sm:hidden text-left pl-6 pt-4">{props.children}</div>
+    <div className="sm:hidden text-left text-lg pl-6 pt-4 md:text-xl md:leading-8">{props.children}</div>
   </div>
 )

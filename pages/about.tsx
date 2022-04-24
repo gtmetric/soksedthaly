@@ -8,11 +8,11 @@ import { Navbar } from '../components/Navbar'
 
 const About: NextPage = () => {
   return (
-    <main className="text-center pt-16 px-8 sm:px-10 max-w-4xl mx-auto">
+    <main className="text-center pt-16 px-8 sm:px-10 max-w-4xl mx-auto xl:max-w-5xl">
       {/* About Section */}
       <div>
-        <h1 className="text-3xl font-bold py-10">About</h1>
-        <p className="text-left">
+        <h1 className="text-3xl font-bold py-10 md:text-4xl md:py-12">About</h1>
+        <p className="text-left text-lg md:text-xl md:leading-9">
           As an energetic software engineer, I devote my full potential to
           learning new technologies and finding solutions to real-world
           problems. At the university, I learned to work as a team and interact
@@ -22,7 +22,7 @@ const About: NextPage = () => {
 
       {/* Experience Section */}
       <div>
-        <h1 className="text-3xl font-bold py-10">Experience</h1>
+        <h1 className="text-3xl font-bold py-10 md:text-4xl md:py-12">Experience</h1>
         <ExperienceItem
           year="2022"
           month="Jan - Feb"
@@ -44,7 +44,7 @@ const About: NextPage = () => {
         </ExperienceItem>
         <ExperienceItem
           year="2021"
-          month="Jun - Jun"
+          month="Jun - Jul"
           position="Software Engineer in Test"
           employer="Intern - LINE MAN Wongnai"
         >
@@ -91,7 +91,7 @@ const About: NextPage = () => {
 
       {/* Education Section */}
       <div>
-        <h1 className="text-3xl font-bold pb-10">Education</h1>
+        <h1 className="text-3xl font-bold pb-10 md:text-4xl md:pb-12">Education</h1>
         <EducationItem
           school="Mahidol University, Thailand"
           year="2018 - 2022"
@@ -111,7 +111,7 @@ const About: NextPage = () => {
                 <span className="font-semibold">Senior Project:</span>{' '}
                 Developing eSit (Ergonomic Sitting Posture Monitoring System
                 using Computer Vision Techniques) using React for UI Client,
-                Express for API Server, & FastAPI for ML Server
+                Express for API Server, & FastAPI for Machine Learning Server
               </p>
               <p className="font-semibold pt-2">
                 (Typescript, React, Node.js, FastAPI, Firebase, Docker)
