@@ -11,7 +11,7 @@ const About: NextPage = () => {
     <main className="text-center pt-16 px-8 sm:px-10 max-w-4xl mx-auto xl:max-w-5xl">
       {/* About Section */}
       <div>
-        <h1 className="text-3xl font-bold py-10 md:text-4xl md:py-12">About</h1>
+        <h1 className="text-3xl font-bold py-12 pt-14 md:text-4xl">About</h1>
         <p className="text-left text-lg md:text-xl md:leading-9">
           As an energetic software engineer, I devote my full potential to
           learning new technologies and finding solutions to real-world
@@ -22,7 +22,7 @@ const About: NextPage = () => {
 
       {/* Experience Section */}
       <div>
-        <h1 className="text-3xl font-bold py-10 md:text-4xl md:py-12">Experience</h1>
+        <h1 className="text-3xl font-bold py-12 md:text-4xl">Experience</h1>
         <ExperienceItem
           year="2022"
           month="Jan - Feb"
@@ -91,7 +91,7 @@ const About: NextPage = () => {
 
       {/* Education Section */}
       <div>
-        <h1 className="text-3xl font-bold pb-10 md:text-4xl md:pb-12">Education</h1>
+        <h1 className="text-3xl font-bold pb-12 pt-2 md:text-4xl">Education</h1>
         <EducationItem
           school="Mahidol University, Thailand"
           year="2018 - 2022"
