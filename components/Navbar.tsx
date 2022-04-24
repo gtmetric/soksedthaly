@@ -17,9 +17,9 @@ export const Navbar = () => {
 
   return (
     <nav className="fixed w-full top-0 z-10 sm:bg-gray-900 sm:bg-opacity-90">
-      <div className="container flex flex-wrap justify-between items-center mx-auto max-w-4xl bg-gray-900 px-4 py-4 backdrop-filter backdrop-blur-sm bg-opacity-90 sm:bg-opacity-0 shadow-lg xl:max-w-6xl">
+      <div className="container flex flex-wrap justify-between items-center mx-auto max-w-4xl bg-gray-900 px-5 py-4 backdrop-filter backdrop-blur-sm bg-opacity-90 sm:bg-opacity-0 shadow-lg xl:max-w-6xl">
         <Link href="/" passHref>
-          <a className="text-xl text-white font-semibold cursor-pointer md:text-2xl">
+          <a className="text-xl text-white font-semibold px-3 cursor-pointer md:text-2xl">
             Soksedtha Ly
           </a>
         </Link>
