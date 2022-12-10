@@ -1,8 +1,12 @@
 module.exports = {
-  content: [
-    './src/**/*.{js,ts,jsx,tsx}',
-  ],
+  content: ['./src/**/*.{js,ts,jsx,tsx}'],
+
   theme: {
+    colors: {
+      default: '#494959',
+      white: '#FFFFFF',
+      'gray-primary': '#D9D9D9',
+    },
     extend: {
       keyframes: {
         'fade-in-down': {
