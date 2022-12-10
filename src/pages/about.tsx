@@ -1,27 +1,39 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import { getPersonalData } from '../clients/api'
+import { About } from '../components/about/About'
 import { EducationItem } from '../components/about/EducationItem'
+// import { ExperienceList } from '../components/about/ExperienceList'
 import { ExperienceItem } from '../components/about/ExperienceItem'
+import { Profile } from '../components/about/Profile'
 import { Footer } from '../components/Footer'
 import { NavBar } from '../components/Navbar/NavBar'
+import { API } from '../constants/api'
+import { PersonalData } from '../types/PersonalData'
 
-const About: NextPage = () => {
+type AboutPageProps = {
+  data: PersonalData
+}
+
+const AboutPage: NextPage<AboutPageProps> = ({ data }) => {
   return (
-    <main className="text-center pt-16 px-8 sm:px-10 max-w-4xl mx-auto xl:max-w-5xl">
-      {/* About Section */}
-      <div>
-        <h1 className="text-3xl font-bold py-12 pt-14 md:text-4xl">About</h1>
-        <p className="text-left text-lg md:text-xl md:leading-9">
-          As an energetic software engineer, I devote my full potential to
-          learning new technologies and finding solutions to real-world
-          problems. At the university, I learned to work as a team and interact
-          diplomatically with people leading to quality work.
-        </p>
+    <main className="text-center px-8 sm:px-28 max-w-4xl mx-auto sm:max-w-screen-2xl">
+      <div className="flex h-screen items-center">
+        <div className="flex-1">
+          <Profile />
+        </div>
+        <div className="flex-1 flex-col space-y-12">
+          <div className="flex-1">
+            <About about={data.about} />
+          </div>
+          <div className="flex-2 h-[30vh] bg-gray-primary" />
+        </div>
       </div>
 
+      {/* <ExperienceList experiences={data.experiences} /> */}
       {/* Experience Section */}
-      <div>
+      {/* <div>
         <h1 className="text-3xl font-bold py-12 md:text-4xl">Experience</h1>
         <ExperienceItem
           year="2022"
@@ -87,10 +99,10 @@ const About: NextPage = () => {
             </li>
           </ul>
         </ExperienceItem>
-      </div>
+      </div> */}
 
       {/* Education Section */}
-      <div>
+      {/* <div>
         <h1 className="text-3xl font-bold pb-12 pt-2 md:text-4xl">Education</h1>
         <EducationItem
           school="Mahidol University, Thailand"
@@ -137,9 +149,14 @@ const About: NextPage = () => {
             </li>
           </ul>
         </EducationItem>
-      </div>
+      </div> */}
     </main>
   )
 }
 
-export default About
+export async function getServerSideProps() {
+  const data = await getPersonalData()
+  return { props: { data } }
+}
+
+export default AboutPage
