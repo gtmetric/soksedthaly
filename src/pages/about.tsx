@@ -138,7 +138,6 @@ const About: NextPage = () => {
           </ul>
         </EducationItem>
       </div>
-
     </main>
   )
 }
