@@ -1,8 +1,8 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
-import { Navbar } from '../components/Navbar'
-import { Footer } from '../components/Footer'
 import Head from 'next/head'
+import type { AppProps } from 'next/app'
+import { NavBar } from '../components/Navbar/NavBar'
+import { Footer } from '../components/Footer'
+import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -15,7 +15,8 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
+
+      <NavBar />
       <Component {...pageProps} />
       <Footer />
     </div>

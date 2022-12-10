@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { EducationItem } from '../components/about/EducationItem'
 import { ExperienceItem } from '../components/about/ExperienceItem'
 import { Footer } from '../components/Footer'
-import { Navbar } from '../components/Navbar'
+import { NavBar } from '../components/Navbar/NavBar'
 
 const About: NextPage = () => {
   return (

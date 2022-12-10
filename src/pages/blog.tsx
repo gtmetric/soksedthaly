@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import { Footer } from '../components/Footer'
-import { Navbar } from '../components/Navbar'
+import { NavBar } from '../components/Navbar/NavBar'
 
 const Blog: NextPage = () => {
   return (
