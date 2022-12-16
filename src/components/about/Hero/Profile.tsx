@@ -5,6 +5,7 @@ export const Profile = () => (
       <br />
       LY
     </div>
+
     <div className="text-default text-4xl font-medium">Software Engineer</div>
   </div>
 )

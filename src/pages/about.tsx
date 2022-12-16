@@ -1,12 +1,10 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+
 import { getPersonalData } from '../clients/api'
-import { About } from '../components/about/About'
-import { EducationItem } from '../components/about/EducationItem'
-// import { ExperienceList } from '../components/about/ExperienceList'
-import { ExperienceItem } from '../components/about/ExperienceItem'
-import { Profile } from '../components/about/Profile'
+import { Hero } from '../components/about/Hero'
+import { ExperienceList } from '../components/about/ExperienceList'
 import { Footer } from '../components/Footer'
 import { NavBar } from '../components/Navbar/NavBar'
 import { API } from '../constants/api'
@@ -17,89 +15,13 @@ type AboutPageProps = {
 }
 
 const AboutPage: NextPage<AboutPageProps> = ({ data }) => {
-  return (
-    <main className="text-center px-8 sm:px-28 max-w-4xl mx-auto sm:max-w-screen-2xl">
-      <div className="flex h-screen items-center">
-        <div className="flex-1">
-          <Profile />
-        </div>
-        <div className="flex-1 flex-col space-y-12">
-          <div className="flex-1">
-            <About about={data.about} />
-          </div>
-          <div className="flex-2 h-[30vh] bg-gray-primary" />
-        </div>
-      </div>
+  const { about, experiences } = data
 
-      {/* <ExperienceList experiences={data.experiences} /> */}
-      {/* Experience Section */}
-      {/* <div>
-        <h1 className="text-3xl font-bold py-12 md:text-4xl">Experience</h1>
-        <ExperienceItem
-          year="2022"
-          month="Jan - Feb"
-          position="Full-stack Developer"
-          employer="Freelance"
-        >
-          <ul className="list-disc">
-            <li>
-              <p>
-                Designed and implemented a Patient Record and Stock Management
-                System for a Clinic using Next.js for both the Frontend and
-                Backend with Prisma and MongoDB
-              </p>
-              <p className="font-semibold pt-2">
-                (Typescript, Next.js, Prisma, MongoDB)
-              </p>
-            </li>
-          </ul>
-        </ExperienceItem>
-        <ExperienceItem
-          year="2021"
-          month="Jun - Jul"
-          position="Software Engineer in Test"
-          employer="Intern - LINE MAN Wongnai"
-        >
-          <ul className="list-disc">
-            <li>
-              <p>Designed test cases for new features</p>
-            </li>
-            <li>
-              <p>
-                Performed manual tests and regression tests for the website and
-                mobile applications
-              </p>
-            </li>
-            <li>
-              <p>
-                Created programs for automating tests{' '}
-                <span className="font-semibold">(Cypress, Jest)</span>
-              </p>
-            </li>
-          </ul>
-        </ExperienceItem>
-        <ExperienceItem
-          year="2019"
-          month="Jul"
-          position="Teaching Assistant for Calculus and English"
-          employer="Part Time - Faculty of ICT, Mahidol University"
-        >
-          <ul className="list-disc">
-            <li>
-              <p>Prepared answers to the student&apos;s exercises</p>
-            </li>
-            <li>
-              <p>
-                Assisted the instructors in explaining the lessons and exercises
-                to students
-              </p>
-            </li>
-            <li>
-              <p>Gave advice and tips to students in the subjects</p>
-            </li>
-          </ul>
-        </ExperienceItem>
-      </div> */}
+  return (
+    <main className="text-center max-w-4xl mx-auto sm:max-w-screen-2xl">
+      <Hero about={about} />
+
+      <ExperienceList experiences={experiences} />
 
       {/* Education Section */}
       {/* <div>
