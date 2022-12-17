@@ -9,6 +9,7 @@ import { Footer } from '../components/Footer'
 import { NavBar } from '../components/Navbar/NavBar'
 import { API } from '../constants/api'
 import { PersonalData } from '../types/PersonalData'
+import { TIME_INTERVAL } from '../constants/time-interval'
 
 type AboutPageProps = {
   data: PersonalData
@@ -76,9 +77,9 @@ const AboutPage: NextPage<AboutPageProps> = ({ data }) => {
   )
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const data = await getPersonalData()
-  return { props: { data } }
+  return { props: { data }, revalidate: TIME_INTERVAL.WEEK_IN_SECONDS }
 }
 
 export default AboutPage
