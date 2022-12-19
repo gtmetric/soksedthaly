@@ -10,13 +10,16 @@ import { NavBar } from '../components/Navbar/NavBar'
 import { API } from '../constants/api'
 import { PersonalData } from '../types/PersonalData'
 import { TIME_INTERVAL } from '../constants/time-interval'
+import { BulletPoint } from '../components/about/BulletPoint'
+import { Header } from '../components/about/ExperienceHeader'
+import { EducationList } from '../components/about/EducationList'
 
 type AboutPageProps = {
   data: PersonalData
 }
 
 const AboutPage: NextPage<AboutPageProps> = ({ data }) => {
-  const { about, experiences } = data
+  const { about, experiences, education } = data
 
   return (
     <main className="text-center max-w-4xl mx-auto sm:max-w-screen-2xl">
@@ -24,6 +27,7 @@ const AboutPage: NextPage<AboutPageProps> = ({ data }) => {
 
       <ExperienceList experiences={experiences} />
 
+      <EducationList education={education} />
       {/* Education Section */}
       {/* <div>
         <h1 className="text-3xl font-bold pb-12 pt-2 md:text-4xl">Education</h1>

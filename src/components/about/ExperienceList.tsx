@@ -1,5 +1,5 @@
 import { Experience } from '../../types/PersonalData'
-import { ExperienceHeader } from './ExperienceList/ExperienceHeader'
+import { Header } from './ExperienceHeader'
 import { ExperienceItem } from './ExperienceList/ExperienceItem'
 
 type ExperienceListProps = {
@@ -8,7 +8,7 @@ type ExperienceListProps = {
 
 export const ExperienceList = ({ experiences }: ExperienceListProps) => (
   <div className="text-left">
-    <ExperienceHeader />
+    <Header title="Experience" description="Short Description" />
 
     {experiences.map((experience, index) => (
       <ExperienceItem

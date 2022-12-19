@@ -1,16 +1,12 @@
-import { BulletPoint } from '../../../types/PersonalData'
-import { DutyItem } from './DutyItem'
+import { BulletPoint as TBulletPoint } from '../../../types/PersonalData'
+import { BulletPoint } from '../BulletPoint'
 
-type DutyListProps = { duties: BulletPoint[] }
+type DutyListProps = { duties: TBulletPoint[] }
 
 export const DutyList = ({ duties }: DutyListProps) => (
   <ul className="list-disc">
-    {duties.map(({ description, highlight }) => (
-      <DutyItem
-        key={description}
-        description={description}
-        highlight={highlight}
-      />
+    {duties.map((duty) => (
+      <BulletPoint key={duty.description} bulletPoint={duty} />
     ))}
   </ul>
 )
