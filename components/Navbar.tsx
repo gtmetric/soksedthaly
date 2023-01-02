@@ -51,12 +51,12 @@ export const Navbar = () => {
               About
             </a>
           </Link>
-          <Link href="/blog" passHref>
+          <Link href="#" passHref>
             <a className="text-gray-300 hover:text-white px-3 cursor-pointer md:text-lg">
               Blog
             </a>
           </Link>
-          <Link href="/contact" passHref>
+          <Link href="#" passHref>
             <a className="text-gray-300 hover:text-white px-3 cursor-pointer md:text-lg">
               Contact
             </a>
@@ -81,7 +81,7 @@ export const Navbar = () => {
               About
             </a>
           </Link>
-          <Link href="/blog" passHref>
+          <Link href="#" passHref>
             <a
               className="text-gray-300 hover:text-white cursor-pointer py-2"
               onClick={() => setNavChange(!navOpen)}
@@ -89,7 +89,7 @@ export const Navbar = () => {
               Blog
             </a>
           </Link>
-          <Link href="/contact" passHref>
+          <Link href="#" passHref>
             <a
               className="text-gray-300 hover:text-white cursor-pointer py-2"
               onClick={() => setNavChange(!navOpen)}
