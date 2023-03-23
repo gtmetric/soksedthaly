@@ -3,10 +3,14 @@ import { NavLogo } from './NavLogo'
 import { NavMenuButton } from './NavMenuButton'
 import { NavLink } from './NavLink'
 import { NavDropdownMenu } from './NavDropdownMenu'
+import { useRouter } from 'next/router'
 
 export const NavBar = () => {
   const [navOpen, setNavOpen] = useState(false)
   const [navChange, setNavChange] = useState(false)
+
+  const router = useRouter()
+  router.query = { id: '123' }
 
   useEffect(() => {
     if (!navChange) {
@@ -23,6 +27,10 @@ export const NavBar = () => {
       <div className="border-b-gray-primary border-b">
         <div className="container bg-white flex flex-wrap justify-between items-center mx-auto max-w-4xl px-5 py-4 sm:justify-start sm:px-10 sm:py-8 sm:max-w-screen-2xl">
           <NavLogo />
+          <button onClick={() => router.push({
+            pathname: '/test',
+            query: { id: '123' },
+          })}>Test</button>
 
           <div className="hidden w-full space-x-4 sm:block sm:w-auto sm:pl-9">
             <NavLink href="/about" title="About" />
