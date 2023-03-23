@@ -23,11 +23,11 @@ export const Footer = () => {
               </a>
             </Link>
           </div>
-          <Link href="/contact" passHref>
+          {/* <Link href="/contact" passHref>
             <a className="text-gray-300 hover:text-white px-3 cursor-pointer md:text-lg">
               Contact
             </a>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </footer>

@@ -1,10 +1,6 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
 import { EducationItem } from '../components/about/EducationItem'
 import { ExperienceItem } from '../components/about/ExperienceItem'
-import { Footer } from '../components/Footer'
-import { Navbar } from '../components/Navbar'
 
 const About: NextPage = () => {
   return (
@@ -138,7 +134,6 @@ const About: NextPage = () => {
           </ul>
         </EducationItem>
       </div>
-
     </main>
   )
 }

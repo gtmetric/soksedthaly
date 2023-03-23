@@ -46,7 +46,7 @@ export const Navbar = () => {
           </svg>
         </button>
         <div className="hidden w-full sm:block sm:w-auto">
-          <Link href="/about" passHref>
+          {/* <Link href="/about" passHref>
             <a className="text-gray-300 hover:text-white px-3 cursor-pointer md:text-lg">
               About
             </a>
@@ -60,10 +60,10 @@ export const Navbar = () => {
             <a className="text-gray-300 hover:text-white px-3 cursor-pointer md:text-lg">
               Contact
             </a>
-          </Link>
+          </Link> */}
         </div>
       </div>
-      <div
+      {/* <div
         className={`${
           navChange ? 'animate-fade-in-down' : 'animate-fade-out-up'
         } bg-gray-800 backdrop-filter backdrop-blur-sm bg-opacity-90`}
@@ -98,7 +98,7 @@ export const Navbar = () => {
             </a>
           </Link>
         </div>
-      </div>
+      </div> */}
     </nav>
   )
 }
