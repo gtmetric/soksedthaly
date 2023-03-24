@@ -21,9 +21,9 @@ const About: NextPage = () => {
         <h1 className="text-3xl font-bold py-12 md:text-4xl">Experience</h1>
         <ExperienceItem
           year="2022"
-          month="Jan - Feb"
-          position="Full-stack Developer"
-          employer="Freelance"
+          month="Jun - Present"
+          position="Software Engineer"
+          employer="Pints"
         >
           <ul className="list-disc">
             <li>
