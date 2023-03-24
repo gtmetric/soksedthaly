@@ -94,7 +94,7 @@ const About: NextPage = () => {
           school="Mahidol University, Thailand"
           year="2018 - 2022"
           program="B.Sc. in Information and Communication Technology (Computer Science)"
-          grade="CGPA: 3.96 / 4.00"
+          grade="CGPA: 3.97 / 4.00"
         >
           <ul className="list-disc pl-6">
             <li className="pb-3">
