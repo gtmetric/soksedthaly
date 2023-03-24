@@ -27,14 +27,16 @@ const About: NextPage = () => {
         >
           <ul className="list-disc">
             <li>
-              <p>
-                Designed and implemented a Patient Record and Stock Management
-                System for a Clinic using Next.js for both the Frontend and
-                Backend with Prisma and MongoDB
-              </p>
-              <p className="font-semibold pt-2">
-                (Typescript, Next.js, Prisma, MongoDB)
-              </p>
+              <p>Contribute to the system design</p>
+            </li>
+            <li>
+              <p>Implement APIs and UI components for new features</p>
+            </li>
+            <li>
+              <p>Implement automated tests for better code quality control</p>
+            </li>
+            <li>
+              <p>Refactor and maintain the existing codebase</p>
             </li>
           </ul>
         </ExperienceItem>
@@ -92,7 +94,7 @@ const About: NextPage = () => {
           school="Mahidol University, Thailand"
           year="2018 - 2022"
           program="B.Sc. in Information and Communication Technology (Computer Science)"
-          grade="CGPA: 3.96 / 4.00"
+          grade="CGPA: 3.97 / 4.00"
         >
           <ul className="list-disc pl-6">
             <li className="pb-3">
