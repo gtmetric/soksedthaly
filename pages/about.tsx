@@ -46,19 +46,16 @@ const About: NextPage = () => {
         >
           <ul className="list-disc">
             <li>
-              <p>Designed test cases for new features</p>
+              <p>Contribute to the system design</p>
             </li>
             <li>
-              <p>
-                Performed manual tests and regression tests for the website and
-                mobile applications
-              </p>
+              <p>Implement APIs and UI components for new features</p>
             </li>
             <li>
-              <p>
-                Created programs for automating tests{' '}
-                <span className="font-semibold">(Cypress, Jest)</span>
-              </p>
+              <p>Implement automated tests for better code quality control</p>
+            </li>
+            <li>
+              <p>Refactor and maintain the existing codebase</p>
             </li>
           </ul>
         </ExperienceItem>
