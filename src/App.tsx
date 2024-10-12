@@ -27,7 +27,7 @@ const App: Component = () => {
                         <AiFillGithub size={40} />
                     </a>
                     <a
-                        href="https://linkedin.com/soksedtha-ly"
+                        href="https://linkedin.com/in/soksedtha-ly"
                         target="_blank"
                         rel="noreferrer"
                     >
