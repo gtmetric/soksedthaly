@@ -13,7 +13,7 @@ const App: Component = () => {
                 <h1>Hello, I'm Soksedtha Ly (GT)!</h1>
                 <p>&#123; tech: "enthusiast" | "nerd" &#125;</p>
                 <div class="">
-                    <p>Founding AI and Software Engineer</p>
+                    <p>AI and Software Engineer</p>
                     <a href="https://www.linkedin.com/company/pints-ai/">
                         @pints.ai
                     </a>
