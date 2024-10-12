@@ -8,8 +8,8 @@ import { BiLogosGmail } from 'solid-icons/bi'
 
 const App: Component = () => {
     return (
-        <div class="min-h-screen grid grid-rows-[1fr] overflow-y-auto">
-            <main class="container space-y-4 grid place-items-center h-full">
+        <div class="grid min-h-screen grid-rows-[1fr] overflow-y-auto">
+            <main class="container grid h-full place-items-center space-y-4">
                 <div class="space-y-4 text-center">
                     <h1>Hello, I'm Soksedtha Ly (GT)!</h1>
                     <p>&#123; tech: "enthusiast" | "nerd" &#125;</p>
