@@ -28,5 +28,5 @@ h2 {
 }
 
 .container {
-    @apply px-4 py-2 max-w-5xl;
+    @apply p-4 max-w-5xl;
 }
