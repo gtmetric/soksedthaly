@@ -5,15 +5,25 @@
 @tailwind utilities;
 
 :root {
-    --background-color: #fff;
-    --text-color: #111;
+    --bg-color: 255, 255, 255;
+    --text-color: 0, 0, 0;
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --background-color: #111;
-        --text-color: #fff;
-    }
+.dark {
+    --bg-color: 0, 0, 0;
+    --text-color: 255, 255, 255;
+}
+
+body {
+    background-color: rgb(var(--bg-color));
+    color: rgb(var(--text-color));
+}
+
+*,
+*::before,
+*::after {
+    transition: background-color 0.05s ease-in-out, color 0.025s ease-in-out;
+    transition-delay: 0s;
 }
 
 body {
@@ -21,8 +31,6 @@ body {
     font-family: "Fira Code", monospace;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: var(--background-color);
-    color: var(--text-color);
 }
 
 h1,
